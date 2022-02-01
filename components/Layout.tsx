@@ -113,6 +113,18 @@ const Layout: NextPage<Props> = (props) => {
                         </div>
                     </aside>
                     { /* aside */ }
+
+                    { /* main */ }
+                    <main className="app-main">
+                        <div className="wrapper">
+                            <div className="page">
+                                <div className="page-inner">
+                                    {props.children}
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    { /* main */ }
                 </div>
             </body>
 
