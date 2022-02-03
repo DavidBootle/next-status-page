@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (<>
     { /* base javascript */ }
     <Script src="/assets/vendor/jquery/jquery.min.js" strategy="beforeInteractive"/>
-    <Script src="/assets/vendor/popper.js/umd/popper.min.js"/>
+    <Script src="/assets/vendor/popper.js/umd/popper.min.js" strategy="beforeInteractive"/>
     <Script src="/assets/vendor/bootstrap/js/bootstrap.min.js"/>
 
     { /* theme javascript */ }
