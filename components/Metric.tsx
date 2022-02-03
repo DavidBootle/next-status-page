@@ -14,7 +14,7 @@ const Metric: NextPage<Props> = (props) => {
 
     let metricClass = 'metric';
 
-    if (props.bordered) { metricClass += ' metric-bordered'}
+    if (props.bordered) { metricClass += ' metric-bordered align-items-center'}
     if (props.appendClasses) { metricClass += ` ${props.appendClasses}`} // should always be done last
 
     const metric = (!props.link) ? (
