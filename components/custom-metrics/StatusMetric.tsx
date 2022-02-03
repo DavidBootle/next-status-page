@@ -1,4 +1,4 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { NextPage } from "next";
 import Metric from "../Metric";
 import MetricLabel from "../MetricLabel";
 import MetricValue from "../MetricValue";

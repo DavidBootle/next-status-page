@@ -1,0 +1,15 @@
+
+.refreshbutton {
+    color: darkgray;
+    font-size: 0.6em;
+    vertical-align: middle;
+    transition: color 0.2s;
+}
+
+.refreshbutton:hover {
+    color: gray;
+}
+
+.refreshbutton:active {
+    color: black;
+}
