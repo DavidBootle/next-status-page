@@ -1,5 +1,6 @@
 import type { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next'
 import Column from '../components/Column'
+import ClientResponseTimeMetric from '../components/custom-metrics/ClientResponseTimeMetric'
 import ServerResponseTimeMetric from '../components/custom-metrics/ServerResponseTimeMetric'
 import StatusMetric from '../components/custom-metrics/StatusMetric'
 import Layout from '../components/Layout'
@@ -30,6 +31,9 @@ const BootleTechAPI: NextPage = (props: InferGetServerSidePropsType<typeof getSe
             </Column>
             <Column>
               <ServerResponseTimeMetric responseTime={props.data.ping} url={pingURL} bordered={true}/>
+            </Column>
+            <Column>
+              <ClientResponseTimeMetric url={pingURL} bordered={true}/>
             </Column>
           </MetricRow>
         </SectionBlock>
